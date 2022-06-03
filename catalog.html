@@ -46,12 +46,12 @@
                 <h1>Гостиницы Седоны</h1>
                 <ul class="filter-bredcrubs">
                     <li class="breadcrubs-item">
-                        <a href="index.html" class="breadcrubs-link">
+                        <a class="breadcrubs-link" href="index.html">
                             <span class="visually-hidden">Главная</span>
                         </a>
                     </li>
                     <li class="breadcrubs-item">
-                        <a href="catalog.html" class="breadcrubs-link">
+                        <a class="breadcrubs-link" href="catalog.html">
                             <span class="visually-hidden">Гостиницы</span>
                         </a>
                     </li>
@@ -59,28 +59,28 @@
             </header>
             <!-- не уверен какой лучше тег подобрать -->
             <div class="filter">
-                <h2 class="visually-hidden"></h2>
+                <h2 class="visually-hidden">Выбор параметров проживания</h2>
                 <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="filter-catalog-group">
                         <legend class="filter-catalog-title">Инфраструктура</legend>
                         <ul class="filter-catalog-list">
                             <li class="filter-catalog-item">
-                                <label for="" class="filter-name">
-                                    <input class="filter-input" type="checkbox" name="pool" checked>
-                                    Бассейн
-                                </label>
+
+                                <input class="filter-input" type="checkbox" name="pool" checked>
+                                <label class="filter-name" for="filter-input">Бассейн </label>
+
                             </li>
                             <li class="filter-catalog-item">
-                                <label for="" class="filter-name">
-                                        <input class="filter-input" type="checkbox" name="parking" checked>
-                                        Парковка
-                                    </label>
+
+                                <input class="filter-input" type="checkbox" name="parking" checked>
+                                <label class="filter-name" for="filter-input">Парковка</label>
+
                             </li>
                             <li class="filter-catalog-item">
-                                <label for="" class="filter-name">
-                                        <input class="filter-input" type="checkbox" name="wifi">
-                                        Wi-Fi
-                                    </label>
+
+                                <input class="filter-input" type="checkbox" name="wifi">
+                                <label class="filter-name" for="filter-input">Wi-Fi</label>
+
                             </li>
                         </ul>
 
@@ -149,41 +149,41 @@
             </div>
             <ul class="product-list">
                 <li class="product-item">
-                    <img src="#" alt="Описание" class="product-img">
+                    <img class="product-img" src="#" alt="Описание">
                     <h3>Amara Resort & Spa</h3>
                     <p class="product-type-housing"></p>
                     <p class="product-price"></p>
-                    <a href="#" class="product-details">Подробнее</a>
+                    <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранное">
                     <div class="product-rating-result"></div>
                     <p class="product-rating-value">Рейтинг:</p>
                 </li>
                 <li class="product-item">
-                    <img src="#" alt="Описание" class="product-img">
+                    <img class="product-img" src="#" alt="Описание">
                     <h3>Villas at Poco Diablo</h3>
                     <p class="product-type-housing"></p>
                     <p class="product-price"></p>
-                    <a href="#" class="product-details">Подробнее</a>
+                    <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранном">
                     <div class="product-rating-result"></div>
                     <p class="product-rating-value">Рейтинг:</p>
                 </li>
                 <li class="product-item">
-                    <img src="#" alt="Описание" class="product-img">
+                    <img class="product-img" src="#" alt="Описание">
                     <h3>Desert Quail Inn</h3>
                     <p class="product-type-housing"></p>
                     <p class="product-price"></p>
-                    <a href="#" class="product-details">Подробнее</a>
+                    <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранное">
                     <div class="product-rating-result"></div>
                     <p class="product-rating-value">Рейтинг:</p>
                 </li>
                 <li class="product-item">
-                    <img src="#" alt="Описание" class="product-img">
+                    <img class="product-img" src="#" alt="Описание">
                     <h3>GreenTree Inn</h3>
                     <p class="product-type-housing"></p>
                     <p class="product-price"></p>
-                    <a href="#" class="product-details">Подробнее</a>
+                    <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранное">
                     <div class="product-rating-result"></div>
                     <p class="product-rating-value">Рейтинг:</p>
@@ -193,70 +193,70 @@
             <div class="pagination">
                 <ul class="page-number-list">
                     <li class="page-number-item">
-                        <a href="#" class="page-number-link" pagination-current>1</a>
+                        <a class="page-number-link" href="#" pagination-current>1</a>
                     </li>
                     <li class="page-number-item">
-                        <a href="#" class="page-number-link">2</a>
+                        <a class="page-number-link" href="#">2</a>
                     </li>
                     <li class="page-number-item">
-                        <a href="#" class="page-number-link">3</a>
+                        <a class="page-number-link" href="#">3</a>
                     </li>
                     <li class="page-number-item">
-                        <a href="#" class="page-number-link">4</a>
+                        <a class="page-number-link" href="#">4</a>
                     </li>
                     <li class="page-number-item">
-                        <a href="#" class="page-number-link">...</a>
+                        <a class="page-number-link" href="#">...</a>
                     </li>
                     <li class="page-number-item">
-                        <a href="#" class="page-number-link">10</a>
+                        <a class="page-number-link" href="#" ">10</a>
                     </li>
                 </ul>
 
-                <label for="page-number-amount">Гостиниц на странице:</label>
-                <select class="page-number-amount" aria-label="how-many-pages">
-                    <option value="4">4</option>
-                    <option value="8">8</option>
+                <label for="page-number-amount ">Гостиниц на странице:</label>
+                <select class="page-number-amount " aria-label="how-many-pages ">
+                    <option value="4 ">4</option>
+                    <option value="8 ">8</option>
                 </select>
             </div>
 
         </section>
-        <section class="subscribe subscribe-catalog">
+        <section class="subscribe subscribe-catalog ">
             <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-            <p class="subscribe-text">Только полезная информация и накакого спама, честное бойсткаутское!</p>
-            <div class="subscribe-input-box">
-                <input class="subscribe-input-text" type="email" name="Ваш e-mail" id="email-id">
-                <input class="subscribe-input-button" type="button" value="ПОДПИСАТЬСЯ">
+            <p class="subscribe-text ">Только полезная информация и накакого спама, честное бойсткаутское!</p>
+            <div class="subscribe-input-box ">
+                <input class="subscribe-input-text " type="email " name="Ваш e-mail " id="email-id ">
+                <input class="subscribe-input-button " type="button " value="ПОДПИСАТЬСЯ ">
             </div>
         </section>
     </main>
 
-    <footer class="index-footer">
-        <ul class="footer-elements">
-            <li class="social">
-                <ul class="social-networks">
-                    <li class="social-networks-item">
-                        <a href="#" class="social-networks-link">
-                            <span class="visually-hidden">ВК</span>
+    <footer class="index-footer ">
+        <ul class="footer-elements ">
+            <li class="social ">
+                <ul class="social-networks ">
+                    <li class="social-networks-item ">
+                        <a class="social-networks-link " href="# " >
+                            <span class="visually-hidden ">ВК</span>
                         </a>
                     </li>
-                    <li class="social-networks-item">
-                        <a href="#" class="social-networks-link">
-                            <span class="visually-hidden">Телеграмм</span>
+                    <li class="social-networks-item ">
+                        <a class="social-networks-link " href="# " >
+                            <span class="visually-hidden ">Телеграмм</span>
                         </a>
                     </li>
-                    <li class="social-networks-item">
-                        <a href="#" class="social-networks-link">
-                            <span class="visually-hidden">Ютуб</span>
+                    <li class="social-networks-item ">
+                        <a class="social-networks-link " href="# " >
+                            <span class="visually-hidden ">Ютуб</span>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="number">
+            <li class="number ">
                 <p>+7 (812) 812-12-12</p>
             </li>
-            <li class="academy-link">
-                <a href="#" class="academy-href">
-                    <img src="#" alt="Изображение академии" class="academy-logo">
+            <li class="academy-link ">
+                <a class="academy-href " href="# " >
+                    <img class="academy-logo " src="# " alt="Изображение академии " >
                 </a>
             </li>
         </ul>
