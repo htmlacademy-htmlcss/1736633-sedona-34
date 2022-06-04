@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Панченко](https://up.htmlacademy.ru/htmlcss/34/user/1736633).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Боровик](https://htmlacademy.ru/profile/mouxez).
 
 ---
 
