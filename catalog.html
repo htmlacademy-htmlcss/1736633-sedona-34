@@ -10,7 +10,9 @@
 
 <body>
     <header class="index-header">
-        <img class="header-logo" src="images/logo-main.svg" width="139" height="79" alt="Логотип седона">
+        <a class="header-logo-link" href="index.html">
+            <img class="header-logo" src="images/logo-main.svg" width="139" height="79" alt="Логотип седона">
+        </a>
         <nav class="header-menu">
             <ul class="header-menu-list">
                 <li class="header-menu-item">
@@ -54,9 +56,7 @@
                             </a>
                         </li>
                         <li class="breadcrubs-item">
-                            <a class="breadcrubs-link" href="catalog.html">
-                                <span class="visually-hidden">Гостиницы</span>
-                            </a>
+                            <span class="visually-hidden">Гостиницы</span>
                         </li>
                     </ul>
                 </header>
@@ -68,22 +68,19 @@
                             <legend class="filter-catalog-title">Инфраструктура</legend>
                             <ul class="filter-catalog-list">
                                 <li class="filter-catalog-item">
-
-                                    <input class="filter-input" type="checkbox" name="pool" checked>
-                                    <label class="filter-name" for="filter-input">Бассейн </label>
-
+                                    <label class="filter-name"> 
+                                        <input class="filter-input" type="checkbox" name="pool" checked>
+                                        Бассейн</label>
                                 </li>
                                 <li class="filter-catalog-item">
-
-                                    <input class="filter-input" type="checkbox" name="parking" checked>
-                                    <label class="filter-name" for="filter-input">Парковка</label>
-
+                                    <label class="filter-name">
+                                        <input class="filter-input" type="checkbox" name="parking" checked>
+                                        Парковка</label>
                                 </li>
                                 <li class="filter-catalog-item">
-
-                                    <input class="filter-input" type="checkbox" name="wifi">
-                                    <label class="filter-name" for="filter-input">Wi-Fi</label>
-
+                                    <label class="filter-name">
+                                        <input class="filter-input" type="checkbox" name="wifi">
+                                        Wi-Fi</label>
                                 </li>
                             </ul>
 
@@ -131,7 +128,7 @@
         <section class="catalog">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <div class="catalog-sorting">
-                <p class="amount-sorting">НАЙДЕНО ГОСТИНИЦ: 38</p>
+                <p class="amount-sorting">Найдено гостиниц: 38</p>
                 <select class="catalog-sorting-select" aria-label="sorting">
                     <option value="cheap">Сначала дешевые</option>
                     <option value="cheap">Сначала дешевые</option>
@@ -214,8 +211,8 @@
                     </li>
                 </ul>
 
-                <label for="page-number-amount ">Гостиниц на странице:</label>
-                <select class="page-number-amount " aria-label="how-many-pages ">
+                <label for="page-number-amount-id ">Гостиниц на странице:</label>
+                <select id="page-number-amount-id " class="page-number-amount " aria-label="how-many-pages ">
                     <option value="4 ">4</option>
                     <option value="8 ">8</option>
                 </select>
@@ -223,7 +220,7 @@
 
         </section>
         <section class="subscribe subscribe-catalog ">
-            <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <h2>Подпишитесь на рассылку</h2>
             <p class="subscribe-text ">Только полезная информация и накакого спама, честное бойсткаутское!</p>
             <div class="subscribe-input-box ">
                 <input class="subscribe-input-text " type="email " name="Ваш e-mail " id="email-id ">
