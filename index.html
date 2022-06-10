@@ -8,11 +8,11 @@
 
 <body>
     <header class="index-header">
-        <img class="header-logo" src="#" alt="Логотип седона">
+        <img class="header-logo" src="images/logo-main.svg" width="139" height="79" alt="Логотип седона">
         <nav class="header-menu">
             <ul class="header-menu-list">
                 <li class="header-menu-item">
-                    <a class="header-menu-link" href="#">Главная</a>
+                    <a class="header-menu-link" href="index.html">Главная</a>
                 </li>
                 <li class="header-menu-item">
                     <a class="header-menu-link" href="#">О Седоне</a>
@@ -25,11 +25,13 @@
             <ul class="header-user-list">
                 <li class="header-user-item">
                     <a class="header-user-link" href="#">
+                        <img class="header-user-icon" src="images/search-icon.svg" width="18" height="18">
                         <span class="visually-hidden">Поиск</span>
                     </a>
                 </li>
                 <li class="header-user-item">
                     <a class="header-user-link" href="#">
+                        <img class="header-user-icon" src="images/favorite-icon.svg " width="18" height="17">
                         <span class="visually-hidden">Избранное</span>
                     </a>
                 </li>
@@ -42,8 +44,12 @@
     <main class="index-main">
         <section class="hero">
             <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-            <img class="welcome-to-sedona" src="#" alt="Описание фона">
-            <p class="what-is-sedona">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+            <div class="hero-background" style="background-image:url(images/index-background.jpg); width: 1200px; height: 485px">
+                <img class="welcome-to-sedona" src="images/welcome-text.svg" width="458" height="352" alt="Описание фона">
+                <img class="hero-divider" src="images/index-background-form.svg" width="1200" height="57">
+            </div>
+
+            <p class="what-is-sedona">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="why-it-better">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
         <section class="benefit-section">
@@ -55,43 +61,43 @@
                     <p class="item-description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </li>
                 <li class="benefit-item-photo">
-                    <img class="benefit-photo-settings" src="#" alt="Фото с пейзажем">
+                    <img class="benefit-photo-settings" src="images/photo-1.jpg" width="800" height="384" alt="Фото с пейзажем">
                 </li>
                 <li class="benefit-item-addition bg-light-blue">
-                    <img class="description-icon" src="#" alt="Иконка домика">
-                    <p class="item-addition-name">ЖИЛЬЕ</p>
+                    <img class="description-icon" src="images/house-icon.svg" width="75" height="72" alt="Иконка домика">
+                    <p class="item-addition-name">Жильё</p>
                     <p class="item-addition-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="benefit-item-addition bg-white">
-                    <img class="description-icon" src="#" alt="Иконка еды">
-                    <p class="item-addition-name">ЕДА</p>
+                    <img class="description-icon" src="images/food-icon.svg" width="74" height="70" alt="Иконка еды">
+                    <p class="item-addition-name">Еда</p>
                     <p class="item-addition-text">Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!</p>
                 </li>
                 <li class="benefit-item-addition bg-light-blue">
-                    <img class="description-icon" src="#" alt="Иконка сувениров">
-                    <p class="item-addition-name">СУВЕНИРЫ</p>
+                    <img class="description-icon" src="images/gift-icon.svg" width="64" height="76" alt="Иконка сувениров">
+                    <p class="item-addition-name">Сувениры</p>
                     <p class="item-addition-text">Не только китайского, но и настоящего местного производства</p>
                 </li>
                 <li class="benefit-item-photo">
-                    <img class="benefit-photo-settings" src="#" alt="Фото с пейзажем" class="benefit-photo-settings">
+                    <img class="benefit-photo-settings" src="images/photo-2.jpg" width="800" height="384" alt="Фото с пейзажем">
                 </li>
                 <li class="benefit-item-description">
-                    <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+                    <h3>Там есть мост Дьявола</h3>
                     <p class="item-description-number">-№2-</p>
                     <p class="item-description-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </li>
                 <li class="benefit-item-description bg-white">
-                    <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                    <h3>Небольшая площадь</h3>
                     <p class="item-description-number">-№3-</p>
                     <p class="item-description-text">Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="benefit-item-description bg-light-blue">
-                    <h3>КРАСИВАЯ ДОРОГА</h3>
+                    <h3>Красивая дорога</h3>
                     <p class="item-description-number">-№4-</p>
                     <p class="item-description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="benefit-item-description bg-white">
-                    <h3>МАЛО ТУРИСТОВ</h3>
+                    <h3>Мало туристов</h3>
                     <p class="item-description-number">-№5-</p>
                     <p class="item-description-text">Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
@@ -102,8 +108,8 @@
             <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
             <input class="search-hotel-button" type="button" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">
         </section>
-        <section class="subscribe">
-            <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <section class="subscribe" style="background-image: url(images/background.jpg); width: 1200px; height: 411px;">
+            <h2>Подпишитесь на рассылку</h2>
             <p class="subscribe-text">Только полезная информация и накакого спама, честное бойсткаутское!</p>
             <div class="subscribe-input-box">
                 <input class="subscribe-input-text" type="email" name="Ваш e-mail" id="email-id">
@@ -117,16 +123,19 @@
                 <ul class="social-networks">
                     <li class="social-networks-item">
                         <a class="social-networks-link" href="#">
+                            <img class="social-networks-icon" src="images/vk-icon.svg" width="24" height="14" alt="">
                             <span class="visually-hidden">ВК</span>
                         </a>
                     </li>
                     <li class="social-networks-item">
                         <a class="social-networks-link" href="#">
+                            <img class="social-networks-icon" src="images/telegram-icon.svg" width="18" height="15.1" alt="">
                             <span class="visually-hidden">Телеграмм</span>
                         </a>
                     </li>
                     <li class="social-networks-item">
                         <a class="social-networks-link" href="#">
+                            <img class="social-networks-icon" src="images/youtube-icon.svg" width="22" height="17" alt="">
                             <span class="visually-hidden">Ютуб</span>
                         </a>
                     </li>
@@ -137,7 +146,7 @@
             </li>
             <li class="academy-link">
                 <a class="academy-href" href="#">
-                    <img class="academy-logo" src="#" alt="Изображение академии">
+                    <img class="academy-logo" src="images/Logo-footer.svg" width="114.9" height="32.9" alt="Изображение академии">
                 </a>
             </li>
         </ul>
