@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Седона: каталог</title>
 </head>
 
@@ -46,7 +47,7 @@
     </header>
     <main>
         <section class="filter">
-            <div class="filter-background" style="background-image: url(images/Filter-background.jpg); width: 1200px; height: 403px;">
+            <div class="filter-background">
                 <header class="filter-header">
                     <h1>Гостиницы Седоны</h1>
                     <ul class="filter-bredcrubs">
@@ -87,7 +88,7 @@
                         </fieldset>
 
                         <fieldset class="filter-catalog-group">
-                            <legend class="filter-catalog-title">Инфраструктура</legend>
+                            <legend class="filter-catalog-title">Тип жилья</legend>
                             <ul class="filter-catalog-list">
                                 <li class="filter-catalog-item">
                                     <label class="filter-name">
@@ -114,12 +115,12 @@
                         <fieldset class="filter-catalog-price">
                             <legend class="filter-catalog-title">Стоимость,₽;</legend>
                             <div class="filter-catalog-price-input">
-                                <label class="filter-catalog-price-input-text">от<input type="number" name="price-for"></label>
-                                <label class="filter-catalog-price-input-text">до<input type="number" name="price-for"></label>
+                                <label class="filter-catalog-price-input-text">от<input type="number" name="price-for" value="0"></label>
+                                <label class="filter-catalog-price-input-text">до<input type="number" name="price-for" value="9000"></label>
                             </div>
                         </fieldset>
                         <input class="filter-submit-button" type="submit" value="Показать">
-                        <input class="filter-submit-button" type="reset" value="Сбросить">
+                        <input class="filter-reset-button" type="reset" value="Сбросить">
                     </form>
                 </div>
             </div>
@@ -150,49 +151,49 @@
                 <li class="product-item">
                     <img class="product-img" src="images/hotel-1.jpg" width="300" height="211" alt="Описание">
                     <h3>Amara Resort & Spa</h3>
-                    <p class="product-type-housing"></p>
-                    <p class="product-price"></p>
+                    <p class="product-type-housing">Гостиница</p>
+                    <p class="product-price">От 4000 ₽</p>
                     <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранное">
                     <div class="product-rating-result"></div>
-                    <p class="product-rating-value">Рейтинг:</p>
+                    <p class="product-rating-value">Рейтинг: 8,5</p>
                 </li>
                 <li class="product-item">
                     <img class="product-img" src="images/hotel-2.jpg" width="300" height="211" alt="Описание">
                     <h3>Villas at Poco Diablo</h3>
-                    <p class="product-type-housing"></p>
-                    <p class="product-price"></p>
+                    <p class="product-type-housing">Гостиница</p>
+                    <p class="product-price">От 5000 ₽</p>
                     <a class="product-details" href="#">Подробнее</a>
-                    <input class="product-to-favorite" type="button" value="В избранном">
+                    <input class="product-to-favorite product-to-favorite-accept" type="button" value="В избранном">
                     <div class="product-rating-result"></div>
-                    <p class="product-rating-value">Рейтинг:</p>
+                    <p class="product-rating-value">Рейтинг: 9,2</p>
                 </li>
                 <li class="product-item">
                     <img class="product-img" src="images/hotel-3.jpg" width="300" height="211" alt="Описание">
                     <h3>Desert Quail Inn</h3>
-                    <p class="product-type-housing"></p>
-                    <p class="product-price"></p>
+                    <p class="product-type-housing">Гостиница</p>
+                    <p class="product-price">От 2500 ₽</p>
                     <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранное">
                     <div class="product-rating-result"></div>
-                    <p class="product-rating-value">Рейтинг:</p>
+                    <p class="product-rating-value">Рейтинг: 6,9</p>
                 </li>
                 <li class="product-item">
                     <img class="product-img" src="images/hotel-4.jpg" width="300" height="211" alt="Описание">
                     <h3>GreenTree Inn</h3>
-                    <p class="product-type-housing"></p>
-                    <p class="product-price"></p>
+                    <p class="product-type-housing">Гостиница</p>
+                    <p class="product-price">От 1500 ₽</p>
                     <a class="product-details" href="#">Подробнее</a>
                     <input class="product-to-favorite" type="button" value="В избранное">
                     <div class="product-rating-result"></div>
-                    <p class="product-rating-value">Рейтинг:</p>
+                    <p class="product-rating-value">Рейтинг: 5,0</p>
                 </li>
             </ul>
             <hr>
             <div class="pagination">
                 <ul class="page-number-list">
                     <li class="page-number-item">
-                        <a class="page-number-link" href="#" pagination-current>1</a>
+                        <a class="page-number-link page-number-link-selected" href="#" pagination-current>1</a>
                     </li>
                     <li class="page-number-item">
                         <a class="page-number-link" href="#">2</a>
@@ -211,7 +212,7 @@
                     </li>
                 </ul>
 
-                <label for="page-number-amount-id ">Гостиниц на странице:</label>
+                <label class="page-number-amount-label " for="page-number-amount-id ">Гостиниц на странице:</label>
                 <select id="page-number-amount-id " class="page-number-amount " aria-label="how-many-pages ">
                     <option value="4 ">4</option>
                     <option value="8 ">8</option>
@@ -253,7 +254,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="number ">
+            <li class="footer-number ">
                 <p>+7 (812) 812-12-12</p>
             </li>
             <li class="academy-link ">
