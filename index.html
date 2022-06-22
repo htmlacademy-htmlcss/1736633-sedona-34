@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     <main class="index-main">
         <section class="hero">
             <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-            <div class="hero-background" style="background-image:url(images/index-background.jpg); width: 1200px; height: 485px">
+            <div class="hero-background">
                 <img class="welcome-to-sedona" src="images/welcome-text.svg" width="458" height="352" alt="Описание фона">
                 <img class="hero-divider" src="images/index-background-form.svg" width="1200" height="57">
             </div>
@@ -56,8 +57,8 @@
             <h2 class="visually-hidden">5 причин, по которым Седона круче!</h2>
             <ul class="benefits-list">
                 <li class="benefit-item-description">
-                    <h3>Настоящий городок</h3>
-                    <p class="item-description-number">-№1-</p>
+                    <h3 class="benefit-item-h">Настоящий городок</h3>
+                    <p class="item-description-number">— №1 —</p>
                     <p class="item-description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </li>
                 <li class="benefit-item-photo">
@@ -82,24 +83,24 @@
                     <img class="benefit-photo-settings" src="images/photo-2.jpg" width="800" height="384" alt="Фото с пейзажем">
                 </li>
                 <li class="benefit-item-description">
-                    <h3>Там есть мост Дьявола</h3>
-                    <p class="item-description-number">-№2-</p>
+                    <h3 class="benefit-item-h">Там есть мост Дьявола</h3>
+                    <p class="item-description-number">— №2 —</p>
                     <p class="item-description-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </li>
-                <li class="benefit-item-description bg-white">
-                    <h3>Небольшая площадь</h3>
-                    <p class="item-description-number">-№3-</p>
-                    <p class="item-description-text">Все достопримечательности находятся очень близко</p>
+                <li class="benefit-item-addition bg-white">
+                    <h3 class="item-addition-name">Небольшая площадь</h3>
+                    <p class="item-addition-number">— №3 —</p>
+                    <p class="item-addition-text">Все достопримечательности находятся очень близко</p>
                 </li>
-                <li class="benefit-item-description bg-light-blue">
-                    <h3>Красивая дорога</h3>
-                    <p class="item-description-number">-№4-</p>
-                    <p class="item-description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <li class="benefit-item-addition bg-light-blue">
+                    <h3 class="item-addition-name">Красивая дорога</h3>
+                    <p class="item-addition-number">— №4 —</p>
+                    <p class="item-addition-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
-                <li class="benefit-item-description bg-white">
-                    <h3>Мало туристов</h3>
-                    <p class="item-description-number">-№5-</p>
-                    <p class="item-description-text">Большинство едет в Гранд Каньон и толпится там</p>
+                <li class="benefit-item-addition bg-white">
+                    <h3 class="item-addition-name">Мало туристов</h3>
+                    <p class="item-addition-number">— №5 —</p>
+                    <p class="item-addition-text">Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
             </ul>
         </section>
@@ -108,11 +109,11 @@
             <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
             <input class="search-hotel-button" type="button" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">
         </section>
-        <section class="subscribe" style="background-image: url(images/background.jpg); width: 1200px; height: 411px;">
+        <section class="subscribe">
             <h2>Подпишитесь на рассылку</h2>
             <p class="subscribe-text">Только полезная информация и накакого спама, честное бойсткаутское!</p>
             <div class="subscribe-input-box">
-                <input class="subscribe-input-text" type="email" name="Ваш e-mail" id="email-id">
+                <input class="subscribe-input-text" type="email" value="Ваш e-mail" id="email-id">
                 <input class="subscribe-input-button" type="button" value="ПОДПИСАТЬСЯ">
             </div>
         </section>
@@ -141,7 +142,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="number">
+            <li class="footer-number">
                 <p>+7 (812) 812-12-12</p>
             </li>
             <li class="academy-link">
