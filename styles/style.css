@@ -382,7 +382,7 @@ ul {
 }
 
 .filter-background {
-  background-image: url("../images/Filter-background.jpg");
+  background-image: url("../images/filter-background.jpg");
   width: 1200px;
   height: 403px;
 }
@@ -538,27 +538,32 @@ fieldset {
   width: 160px;
   justify-content: space-between;
 }
-.sorting-view-button input {
+.sorting-view-button label {
+  display: block;
   width: 44px;
   height: 44px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
-.sorting-view-button-active input {
+.sorting-view-button-active label {
   border: 2px solid #000000;
 }
-#sorting-view-button-1 {
+.sorting-view-button input {
+  display: none;
+}
+
+#sorting-view-button-1-label {
   background-image: url(../images/icon-table.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#sorting-view-button-2 {
+#sorting-view-button-2-label {
   background-image: url(../images/icon-slideshow.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#sorting-view-button-3 {
+#sorting-view-button-3-label {
   background-image: url(../images/icon-list.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -591,6 +596,10 @@ fieldset {
   display: grid;
   justify-content: space-between;
   justify-items: stretch;
+  margin-right: 18px;
+}
+.product-item:nth-child(3) {
+  margin-right: 0;
 }
 .product-detal-inf {
   display: grid;
