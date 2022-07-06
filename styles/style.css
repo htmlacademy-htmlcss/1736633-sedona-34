@@ -47,7 +47,7 @@ ul {
 }
 
 .index-header {
-  height: 65px;
+  /* height: 65px; */
 }
 
 .header-container {
@@ -71,14 +71,14 @@ ul {
   display: flex;
   align-items: center;
   max-width: 390px;
-  padding: 0 62px 0 17px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-menu-item {
   display: grid;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .header-menu-item:not(:first-child) {
@@ -87,11 +87,11 @@ ul {
 
 .header-menu-item-active {
   border-bottom: 2px solid #333333;
-  height: 63px;
 }
 
 .header-menu-link {
   color: #000000;
+  padding: 20px 0;
 }
 
 .header-user-list {
@@ -103,7 +103,9 @@ ul {
   width: 42px;
   text-align: center;
 }
-
+.header-user-link {
+  padding: 24px 12px;
+}
 .header-button {
   font-weight: 700;
   font-size: 16px;
@@ -117,7 +119,9 @@ ul {
   margin-left: 20px;
   padding: 9px 15px;
 }
-
+.index-main {
+  margin-top: -5px;
+}
 .hero {
   margin-bottom: 90px;
 }
@@ -127,6 +131,7 @@ ul {
   width: 1200px;
   height: 485px;
   margin-bottom: 63px;
+  background-repeat: no-repeat;
 }
 
 .welcome-to-sedona {
@@ -362,8 +367,41 @@ ul {
 .social-networks-icon {
   margin: auto 0;
 }
-.social-networks-link {
-  margin: auto 0;
+#social-networks-link-vk {
+  display: block;
+  padding: 13px 12px;
+  background-image: url(../images/vk-icon.svg);
+  width: 24px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#social-networks-link-telegram {
+  display: block;
+  padding: 13px 15px;
+  background-image: url(../images/telegram-icon.svg);
+  width: 18px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#social-networks-link-youtube {
+  display: block;
+  padding: 12px 15px;
+  background-image: url(../images/youtube-icon.svg);
+  width: 22px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#academy-href {
+  display: block;
+  width: 115px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../images/Logo-footer.svg);
 }
 
 .footer-number {
@@ -380,7 +418,9 @@ ul {
   width: 1060px;
   margin: 0 auto;
 }
-
+.filter {
+  margin-top: -5px;
+}
 .filter-background {
   background-image: url("../images/filter-background.jpg");
   width: 1200px;
@@ -598,7 +638,7 @@ fieldset {
   justify-items: stretch;
   margin-right: 18px;
 }
-.product-item:nth-child(3) {
+.product-item:nth-child(3n) {
   margin-right: 0;
 }
 .product-detal-inf {
