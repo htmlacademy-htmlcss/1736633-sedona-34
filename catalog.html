@@ -34,24 +34,12 @@
 
             <ul class="header-user-list">
               <li class="header-user-item">
-                <a class="header-user-link" href="#">
-                  <img
-                    class="header-user-icon"
-                    src="images/search-icon.svg"
-                    width="18"
-                    height="18"
-                  />
+                <a class="header-user-link-search" href="#">
                   <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
               <li class="header-user-item">
-                <a class="header-user-link" href="#">
-                  <img
-                    class="header-user-icon"
-                    src="images/favorite-icon.svg "
-                    width="18"
-                    height="17"
-                  />
+                <a class="header-user-link-favorite" href="#">
                   <span class="visually-hidden">Избранное</span>
                 </a>
               </li>
@@ -70,19 +58,14 @@
                 <h1>Гостиницы Седоны</h1>
                 <ul class="filter-breadcrubs">
                   <li class="breadcrubs-item">
-                    <a class="breadcrubs-link" href="index.html">
+                    <a class="breadcrubs-link-home" href="index.html">
                       <span class="visually-hidden">Главная</span>
-                      <img
-                        class="breadcrubs-home-icon"
-                        src="images/main-house-icon.svg"
-                      />
                     </a>
                   </li>
                   <li class="breadcrubs-item">
-                    <img
-                      class="breadcrubs-arrow"
-                      src="images/breadcrubs-arrow.svg"
-                    />
+                    <div class="breadcrubs-arrow">
+                      <span class="visually-hidden">Стрелка</span>
+                    </div>
                   </li>
                   <li class="breadcrubs-item">
                     <span class="breadcrubs-span">Гостиницы</span>
@@ -227,7 +210,7 @@
               <ul class="catalog-sorting-view">
                 <li class="sorting-view-button sorting-view-button-active">
                   <label
-                    id="sorting-view-button-1-label"
+                    class="sorting-view-button-1-label"
                     for="sorting-view-button-1"
                   ></label>
                   <input
@@ -238,7 +221,7 @@
                 </li>
                 <li class="sorting-view-button">
                   <label
-                    id="sorting-view-button-2-label"
+                    class="sorting-view-button-2-label"
                     for="sorting-view-button-2"
                   ></label>
                   <input
@@ -249,7 +232,7 @@
                 </li>
                 <li class="sorting-view-button">
                   <label
-                    id="sorting-view-button-3-label"
+                    class="sorting-view-button-3-label"
                     for="sorting-view-button-3"
                   ></label>
                   <input
@@ -267,7 +250,7 @@
                   src="images/hotel-1.jpg"
                   width="300"
                   height="211"
-                  alt="Описание"
+                  alt="Изображение карточки гостиницы"
                 />
                 <h3>Amara Resort & Spa</h3>
                 <div class="product-detal-inf">
@@ -295,7 +278,7 @@
                   src="images/hotel-2.jpg"
                   width="300"
                   height="211"
-                  alt="Описание"
+                  alt="Изображение карточки гостиницы"
                 />
                 <h3>Villas at Poco Diablo</h3>
                 <div class="product-detal-inf">
@@ -322,7 +305,7 @@
                   src="images/hotel-3.jpg"
                   width="300"
                   height="211"
-                  alt="Описание"
+                  alt="Изображение карточки гостиницы"
                 />
                 <h3>Desert Quail Inn</h3>
                 <div class="product-detal-inf">
@@ -348,7 +331,7 @@
                   src="images/hotel-4.jpg"
                   width="300"
                   height="211"
-                  alt="Описание"
+                  alt="Изображение карточки гостиницы"
                 />
                 <h3>GreenTree Inn</h3>
                 <div class="product-detal-inf">
@@ -438,7 +421,7 @@
               <ul class="social-networks">
                 <li class="social-networks-item">
                   <a
-                    id="social-networks-link-vk"
+                    class="social-networks-link-vk"
                     href="https://vk.com/htmlacademy"
                   >
                     <span class="visually-hidden">ВК</span>
@@ -446,7 +429,7 @@
                 </li>
                 <li class="social-networks-item">
                   <a
-                    id="social-networks-link-telegram"
+                    class="social-networks-link-telegram"
                     href="https://t.me/htmlacademy"
                   >
                     <span class="visually-hidden">Телеграм</span>
@@ -454,26 +437,19 @@
                 </li>
                 <li class="social-networks-item">
                   <a
-                    id="social-networks-link-youtube"
+                    class="social-networks-link-youtube"
                     href="https://www.youtube.com/user/htmlacademyru"
                   >
-                    <img
-                      class="social-networks-icon"
-                      src="images/youtube-icon.svg"
-                      width="22"
-                      height="17"
-                      alt="Ссылка на ютуб"
-                    />
                     <span class="visually-hidden">Ютуб</span>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="footer-number">
-              <p>+7 (812) 812-12-12</p>
+              <a href="tel:+78128121212">+7 (812) 812-12-12</a>
             </li>
             <li class="academy-link">
-              <a id="academy-href" href="https://htmlacademy.ru/">
+              <a class="academy-href" href="https://htmlacademy.ru/">
                 <span class="visually-hidden">Ссылка на академию</span>
               </a>
             </li>

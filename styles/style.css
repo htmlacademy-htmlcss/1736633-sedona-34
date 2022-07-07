@@ -103,8 +103,23 @@ ul {
   width: 42px;
   text-align: center;
 }
-.header-user-link {
+.header-user-link-search {
+  display: block;
   padding: 24px 12px;
+  background-image: url(../images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 18px;
+  height: 18px;
+}
+.header-user-link-favorite {
+  display: block;
+  padding: 24px 12px;
+  background-image: url(../images/favorite-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 18px;
+  height: 17px;
 }
 .header-button {
   font-weight: 700;
@@ -367,7 +382,7 @@ ul {
 .social-networks-icon {
   margin: auto 0;
 }
-#social-networks-link-vk {
+.social-networks-link-vk {
   display: block;
   padding: 13px 12px;
   background-image: url(../images/vk-icon.svg);
@@ -376,7 +391,7 @@ ul {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#social-networks-link-telegram {
+.social-networks-link-telegram {
   display: block;
   padding: 13px 15px;
   background-image: url(../images/telegram-icon.svg);
@@ -385,7 +400,7 @@ ul {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#social-networks-link-youtube {
+.social-networks-link-youtube {
   display: block;
   padding: 12px 15px;
   background-image: url(../images/youtube-icon.svg);
@@ -395,13 +410,13 @@ ul {
   background-position: 50% 50%;
 }
 
-#academy-href {
+.academy-href {
   display: block;
   width: 115px;
   height: 33px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(../images/Logo-footer.svg);
+  background-image: url(../images/logo-footer.svg);
 }
 
 .footer-number {
@@ -410,6 +425,9 @@ ul {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+.footer-number a{
+  color: #000000;
 }
 /*  */
 /* Catalog.html */
@@ -444,11 +462,29 @@ ul {
 }
 .breadcrubs-item {
   display: flex;
+  width: auto;
   align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  margin-right: 10px;
+}
+.breadcrubs-link-home{
+  display: block;
+  background-image: url(../images/main-house-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 12px;
+  height: 12px;
+  padding: 5px 5px 5px 0;
+}
+.breadcrubs-arrow{
+  display: block;
+  background-image: url(../images/breadcrubs-arrow.svg);
+  background-position: 50% 50%;
+  width: 5px;
+  height: 8px;
 }
 fieldset {
   border: 0;
@@ -593,17 +629,17 @@ fieldset {
   display: none;
 }
 
-#sorting-view-button-1-label {
+.sorting-view-button-1-label {
   background-image: url(../images/icon-table.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#sorting-view-button-2-label {
+.sorting-view-button-2-label {
   background-image: url(../images/icon-slideshow.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#sorting-view-button-3-label {
+.sorting-view-button-3-label {
   background-image: url(../images/icon-list.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
