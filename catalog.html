@@ -92,7 +92,9 @@
                               name="pool"
                               checked
                             />
-                            <span class="filter-check"></span>
+                            <span class="filter-check-mark"></span>
+                            <span class="filter-check-background"></span>
+                            
                             Бассейн</label
                           >
                         </li>
@@ -104,7 +106,8 @@
                               name="parking"
                               checked
                             />
-                            <span class="filter-check"></span>
+                            <span class="filter-check-mark"></span>
+                            <span class="filter-check-background"></span>
                             Парковка</label
                           >
                         </li>
@@ -115,7 +118,8 @@
                               type="checkbox"
                               name="wifi"
                             />
-                            <span class="filter-check"></span>
+                            <span class="filter-check-mark"></span>
+                            <span class="filter-check-background"></span>
                             Wi-Fi</label
                           >
                         </li>
@@ -134,7 +138,9 @@
                               value="hotel"
                               checked
                             />
-                            <span class="filter-radio"></span>
+                            <span class="filter-radio-ellipce"></span>
+                            <span class="filter-radio-back"></span>
+                            
                             Гостиница
                           </label>
                         </li>
@@ -146,7 +152,9 @@
                               name="type-of-housing"
                               value="motel"
                             />
-                            <span class="filter-radio"></span>
+                            <span class="filter-radio-ellipce"></span>
+                            <span class="filter-radio-back"></span>
+                            
                             Мотель
                           </label>
                         </li>
@@ -158,7 +166,9 @@
                               name="type-of-housing"
                               value="apartaments"
                             />
-                            <span class="filter-radio"></span>
+                            <span class="filter-radio-ellipce"></span>
+                            <span class="filter-radio-back"></span>
+                            
                             Апартаменты
                           </label>
                         </li>
@@ -216,14 +226,14 @@
                 <option value="cheap">Сначала дешевые</option>
               </select>
               <ul class="catalog-sorting-view">
-                <li class="sorting-view-button sorting-view-button-active">
+                <li class="sorting-view-button">
                   <label
                     class="sorting-view-button-1-label"
                     for="sorting-view-button-1"
                   ></label>
                   <input
                     id="sorting-view-button-1"
-                    type="button"
+                    type="radio"
                     value="table"
                   />
                 </li>
@@ -406,7 +416,7 @@
           <p class="subscribe-text">
             Только полезная информация и накакого спама, честное бойсткаутское!
           </p>
-          <div class="subscribe-input-box">
+          <form method="post" class="subscribe-input-box">
             <input
               class="subscribe-input-text"
               type="email"
@@ -420,7 +430,7 @@
               value="ПОДПИСАТЬСЯ"
 
             />
-          </div>
+          </form>
         </section>
       </main>
 
