@@ -90,7 +90,7 @@ ul {
 
 .header-menu-link {
   color: #000000;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .header-user-list {
@@ -131,6 +131,7 @@ ul {
   width: 160px;
   margin-left: 20px;
   padding: 9px 15px;
+  cursor: pointer;
 }
 .index-main {
   margin-top: -5px;
@@ -290,6 +291,7 @@ ul {
   border-radius: 4px;
   border: 0;
   padding: 12px 0;
+  cursor: pointer;
 }
 
 .subscribe {
@@ -345,6 +347,7 @@ ul {
   color: #ffffff;
   border: 0;
   height: 60px;
+  cursor: pointer;
 }
 .subscribe-input-button::placeholder {
   font-size: 18px;
@@ -530,7 +533,35 @@ fieldset {
   display: flex;
   justify-content: space-between;
 }
-
+.filter-name{
+  padding-left: 40px;
+}
+.filter-input{
+  position: absolute ;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.filter-radio{
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/radio-off.svg);
+}
+.filter-input:checked + .filter-radio{
+  background-image: url(../images/radio-on.svg);
+}
+.filter-check{
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/check-off.svg);
+}
+.filter-input:checked + .filter-check{
+  background-image: url(../images/check-on.svg);
+}
 .filter-catalog-price-input-text {
   font-weight: 400;
   font-size: 18px;
@@ -584,6 +615,7 @@ fieldset {
   border-radius: 4px;
   border: 0;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .filter-reset-button {
@@ -594,6 +626,7 @@ fieldset {
   text-align: center;
   color: #ffffff;
   border: 0;
+  cursor: pointer;
 }
 .catalog-sorting {
   display: flex;
@@ -743,7 +776,18 @@ fieldset {
 .product-to-favorite-accept {
   background-color: #7db54f;
 }
-
+.product-rating-result{
+display: flex;
+}
+.rating-star{
+background-image: url(../images/rating-star.svg);
+background-repeat: no-repeat;
+width: 18px;
+height: 17px;
+}
+.rating-star:not(:first-child){
+  margin-left: 8px;
+}
 .product-rating-value {
   display: block;
   width: 140px;
