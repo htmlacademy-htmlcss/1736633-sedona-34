@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
     <title>Седона: каталог</title>
   </head>
 
@@ -94,7 +95,7 @@
                             />
                             <span class="filter-check-mark"></span>
                             <span class="filter-check-background"></span>
-                            
+
                             Бассейн</label
                           >
                         </li>
@@ -140,7 +141,7 @@
                             />
                             <span class="filter-radio-ellipce"></span>
                             <span class="filter-radio-back"></span>
-                            
+
                             Гостиница
                           </label>
                         </li>
@@ -154,7 +155,7 @@
                             />
                             <span class="filter-radio-ellipce"></span>
                             <span class="filter-radio-back"></span>
-                            
+
                             Мотель
                           </label>
                         </li>
@@ -168,7 +169,7 @@
                             />
                             <span class="filter-radio-ellipce"></span>
                             <span class="filter-radio-back"></span>
-                            
+
                             Апартаменты
                           </label>
                         </li>
@@ -179,22 +180,41 @@
                     <fieldset class="filter-catalog-price">
                       <legend class="filter-catalog-title">Стоимость,₽;</legend>
                       <div class="filter-catalog-price-input-block">
+                        <span class="filter-catalog-from">от</span>
                         <input
-                          class="filter-catalog-input"
+                          class="filter-catalog-input filter-catalog-input-right"
                           type="number"
                           name="price-for"
                           value="0"
                           placeholder="от"
                         />
                         <input
-                          class="filter-catalog-input"
+                          class="filter-catalog-input filter-catalog-input-left"
                           type="number"
                           name="price-for"
                           value="9000"
                           placeholder="до"
                         />
+                        <span class="filter-catalog-to">до</span>
                       </div>
-                      <input class="filter-range" type="range" />
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar">
+                            <button
+                              type="button"
+                              class="range-toggle toggle-min"
+                            >
+                              <span></span>
+                            </button>
+                            <button
+                              type="button"
+                              class="range-toggle toggle-max"
+                            >
+                              <span></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </fieldset>
                     <div class="filter-button-block">
                       <input
@@ -428,7 +448,6 @@
               class="subscribe-input-button"
               type="button"
               value="ПОДПИСАТЬСЯ"
-
             />
           </form>
         </section>
