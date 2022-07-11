@@ -31,16 +31,7 @@ body {
   background-color: #f2f2f2;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
-}
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .visually-hidden {
   display: none;
@@ -71,6 +62,9 @@ ul {
 }
 
 .header-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   max-width: 400px;
   font-weight: 700;
   font-size: 20px;
@@ -98,11 +92,15 @@ ul {
   color: #000000;
   padding: 18px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.01);
+  text-decoration: none;
 }
 
 .header-user-list {
   display: flex;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-user-item {
@@ -233,6 +231,9 @@ ul {
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .benefits-list li {
@@ -470,6 +471,8 @@ ul {
 }
 
 .footer-elements {
+  list-style: none;
+  margin: 0;
   padding: 45px 0 35px;
   display: flex;
   align-items: center;
@@ -481,6 +484,9 @@ ul {
   width: 142px;
   justify-content: space-around;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-networks-icon {
@@ -588,6 +594,7 @@ ul {
 
 .footer-number a {
   color: #000000;
+  text-decoration: none;
 }
 
 .footer-number a:hover {
@@ -975,6 +982,9 @@ ul {
   width: 111px;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrubs-item {
@@ -1030,11 +1040,10 @@ ul {
   height: 8px;
 }
 
-fieldset {
-  border: 0;
+.filter-catalog-group{
   padding: 0;
+  border: 0;
 }
-
 .filter-catalog {
   display: flex;
   height: 150px;
@@ -1049,6 +1058,9 @@ fieldset {
 }
 
 .filter-catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -1168,7 +1180,10 @@ fieldset {
 .filter-check-background:active {
   background-color: #FFFFFF4D;
 }
-
+.filter-catalog-price{
+  border: 0;
+  padding: 0;
+}
 .filter-catalog-price-input-text {
   font-weight: 400;
   font-size: 18px;
@@ -1408,6 +1423,9 @@ fieldset {
 }
 
 .catalog-sorting-view {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 160px;
   justify-content: space-between;
@@ -1465,6 +1483,9 @@ fieldset {
 }
 
 .product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -1534,6 +1555,7 @@ fieldset {
   text-transform: uppercase;
   padding-top: 9px;
   padding-bottom: 8px;
+  text-decoration: none;
 }
 
 .product-details:hover {
@@ -1692,6 +1714,9 @@ fieldset {
 }
 
 .page-number-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 400px;
   justify-content: space-between;
