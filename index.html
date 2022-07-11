@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <title>HTML Academy: Седона</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <title>HTML Academy Седона</title>
   </head>
 
   <body>
@@ -39,6 +42,7 @@
               <li class="header-user-item">
                 <a class="header-user-link-favorite" href="#">
                   <span class="visually-hidden">Избранное</span>
+                  <span class="amount-favorite">12</span>
                 </a>
               </li>
               <li>
@@ -60,12 +64,7 @@
               height="352"
               alt="Описание фона"
             />
-            <img
-              class="hero-divider"
-              src="images/index-background-form.svg"
-              width="1200"
-              height="57"
-            />
+            <span class="hero-divider"></span>
           </div>
 
           <p class="what-is-sedona">
@@ -245,13 +244,105 @@
               <a href="tel:+78128121212">+7 (812) 812-12-12</a>
             </li>
             <li class="academy-link">
-              <a class="academy-href" href="https://htmlacademy.ru/" target="_blank">
+              <a
+                class="academy-href"
+                href="https://htmlacademy.ru/"
+                target="_blank"
+              >
                 <span class="visually-hidden">Ссылка на академию</span>
               </a>
             </li>
           </ul>
         </div>
       </footer>
+    </div>
+
+    <div class="modal-background modal-background-close">
+      <div class="modal-search">
+        <label class="modal-search-close">
+          <button class="modal-search-close-btn"></button>
+          <span class="close-button-cross"></span>
+          <span class="close-button-back"></span>
+        </label>
+        <section class="modal-content">
+          <h2>Поиск гостиницы в седоне</h2>
+          <form
+            class="modal-form"
+            action="https://echo.htmlacademy.ru/"
+            method="get"
+          >
+            <p class="field-group field-date-in">
+              <label for="input-date-in">Дата Заезда:</label>
+              <input
+                class="field-date-input field-input"
+                type="text"
+                value="27 апреля 2020"
+                name="date-in"
+                id="input-date-in"
+              />
+              <span class="field-danger"
+                >Мы не можем отправить вас в прошлое.</span
+              >
+            </p>
+            <p class="field-group field-date-out">
+              <label for="input-date-out">Дата Выезда:</label>
+              .
+              <input
+                class="field-date-input field-input"
+                type="text"
+                value="01 сентября 2021"
+                name="date-out"
+                id="input-date-out"
+              />
+              <span class="field-ok"
+                >На эти даты есть свободные номера. Пока есть.</span
+              >
+            </p>
+            <div class="field-group field-amount-adult">
+              <label for="input-amount-adult">Взрослые:</label>
+              <div class="amount-people">
+                <button class="minus-number" type="button"></button>
+                <input
+                  class="field-people-input field-input"
+                  type="number"
+                  name="adult"
+                  id="input-amount-adult"
+                  value="2"
+                  readonly
+                />
+                <button class="plus-number" type="button"></button>
+              </div>
+            </div>
+            <div class="field-group field-amount-child">
+              <label for="input-amount-child">Дети:</label>
+              <span class="amount-child-info-back">
+                <span class="amount-child-info"></span>
+              </span>
+              <div class="tooltip">
+                <div class="tooltip-back-triangle"></div>
+                <div class="tooltip-block">
+                  <p class="tooltip-text">
+                    Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </p>
+                </div>
+              </div>
+              <div class="amount-people">
+                <button class="minus-number" type="button"></button>
+                <input
+                  class="field-people-input field-input"
+                  type="number"
+                  name="child"
+                  id="input-amount-child"
+                  value="1"
+                />
+                <button class="plus-number" type="button"></button>
+              </div>
+            </div>
+            <button class="modal-form-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
