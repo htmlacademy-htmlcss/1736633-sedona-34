@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>HTML Academy Седона</title>
   </head>
 
@@ -18,7 +18,7 @@
             src="images/logo-main.svg"
             width="139"
             height="70"
-            alt="Логотип седона"
+            alt="Логотип седона."
           />
           <nav class="header-menu">
             <ul class="header-menu-list">
@@ -46,7 +46,7 @@
                 </a>
               </li>
               <li>
-                <input class="header-button" type="button" value="ХОЧУ СЮДА!" />
+                <button class="header-button" type="button">Хочу сюда!</button>
               </li>
             </ul>
           </nav>
@@ -62,7 +62,7 @@
               src="images/welcome-text.svg"
               width="458"
               height="352"
-              alt="Описание фона"
+              alt="Описание фона."
             />
             <span class="hero-divider"></span>
           </div>
@@ -78,29 +78,29 @@
         <section class="benefit-section">
           <h2 class="visually-hidden">5 причин, по которым Седона круче!</h2>
           <ul class="benefits-list">
-            <li class="benefit-item-description">
-              <h3 class="benefit-item-h">Настоящий городок</h3>
-              <p class="item-description-number">— №1 —</p>
-              <p class="item-description-text">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
-            </li>
-            <li class="benefit-item-photo">
-              <img
-                class="benefit-photo-settings"
-                src="images/photo-1.jpg"
-                width="800"
-                height="384"
-                alt="Фото с пейзажем"
-              />
-            </li>
+            <li class="benefit-item-description-line">
+              <div class="benefit-item-description">
+                <h3 class="benefit-item-h">Настоящий городок</h3>
+                <p class="item-description-number">— №1 —</p>
+                <p class="item-description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="benefit-item-photo">
+                <img
+                  class="benefit-photo-settings"
+                  src="images/photo-1.jpg"
+                  width="800"
+                  height="384"
+                  alt="Фото с пейзажем."
+                />
+              </div>
+          </li>
             <li class="benefit-item-addition bg-light-blue">
               <img
                 class="description-icon"
                 src="images/house-icon.svg"
                 width="75"
                 height="72"
-                alt="Иконка домика"
+                alt="Иконка домика."
               />
               <p class="item-addition-name">Жильё</p>
               <p class="item-addition-text">
@@ -113,7 +113,7 @@
                 src="images/food-icon.svg"
                 width="74"
                 height="70"
-                alt="Иконка еды"
+                alt="Иконка еды."
               />
               <p class="item-addition-name">Еда</p>
               <p class="item-addition-text">
@@ -127,7 +127,7 @@
                 src="images/gift-icon.svg"
                 width="64"
                 height="76"
-                alt="Иконка сувениров"
+                alt="Иконка сувениров."
               />
               <p class="item-addition-name">Сувениры</p>
               <p class="item-addition-text">
@@ -135,38 +135,40 @@
                 производства
               </p>
             </li>
-            <li class="benefit-item-photo">
+            <li class="benefit-item-description-line">
+            <div class="benefit-item-photo">
               <img
                 class="benefit-photo-settings"
                 src="images/photo-2.jpg"
                 width="800"
                 height="384"
-                alt="Фото с пейзажем"
+                alt="Фото с пейзажем."
               />
-            </li>
-            <li class="benefit-item-description">
+            </div>
+            <div class="benefit-item-description">
               <h3 class="benefit-item-h">Там есть мост Дьявола</h3>
               <p class="item-description-number">— №2 —</p>
               <p class="item-description-text">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
-            </li>
-            <li class="benefit-item-addition bg-white">
+            </div>
+          </li>
+            <li class="benefit-item-addition benefit-item-addition-end bg-white">
               <h3 class="item-addition-name">Небольшая площадь</h3>
               <p class="item-addition-number">— №3 —</p>
               <p class="item-addition-text">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
-            <li class="benefit-item-addition bg-light-blue">
+            <li class="benefit-item-addition benefit-item-addition-end bg-light-blue">
               <h3 class="item-addition-name">Красивая дорога</h3>
               <p class="item-addition-number">— №4 —</p>
               <p class="item-addition-text">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li class="benefit-item-addition bg-white">
-              <h3 class="item-addition-name">Мало туристов</h3>
+            <li class="benefit-item-addition benefit-item-addition-end bg-white">
+              <h3 class="item-addition-name">Мало<br>туристов</h3>
               <p class="item-addition-number">— №5 —</p>
               <p class="item-addition-text">
                 Большинство едет в Гранд Каньон и толпится там
@@ -180,16 +182,15 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем лучшие предложения гостиниц в Седоне
           </p>
-          <input
+          <button
             class="search-hotel-button"
             type="button"
-            value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ"
-          />
+          >Поиск гостиницы в седоне</button>
         </section>
         <section class="subscribe">
           <h2>Подпишитесь на рассылку</h2>
           <p class="subscribe-text">
-            Только полезная информация и накакого спама, честное бойсткаутское!
+            Только полезная информация и накакого спама,<br> честное бойсткаутское!
           </p>
           <form method="post" class="subscribe-input-box">
             <input
@@ -200,7 +201,7 @@
             />
             <input
               class="subscribe-input-button"
-              type="button"
+              type="submit"
               value="ПОДПИСАТЬСЯ"
             />
           </form>
@@ -304,7 +305,7 @@
                 <button class="minus-number" type="button"></button>
                 <input
                   class="field-people-input field-input"
-                  type="number"
+                  type="text"
                   name="adult"
                   id="input-amount-adult"
                   value="2"
@@ -331,7 +332,7 @@
                 <button class="minus-number" type="button"></button>
                 <input
                   class="field-people-input field-input"
-                  type="number"
+                  type="text"
                   name="child"
                   id="input-amount-child"
                   value="1"

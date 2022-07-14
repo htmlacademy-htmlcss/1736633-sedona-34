@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Седона: каталог</title>
   </head>
 
@@ -18,7 +18,7 @@
             src="images/logo-main.svg"
             width="139"
             height="70"
-            alt="Логотип седона"
+            alt="Логотип седона."
           />
           <nav class="header-menu">
             <ul class="header-menu-list">
@@ -46,7 +46,7 @@
                 </a>
               </li>
               <li>
-                <input class="header-button" type="button" value="ХОЧУ СЮДА!" />
+                <button class="header-button" type="button">Хочу сюда!</button>
               </li>
             </ul>
           </nav>
@@ -87,43 +87,34 @@
                       <p class="filter-catalog-title">Инфраструктура:</p>
                       <ul class="filter-catalog-list">
                         <li class="filter-catalog-item">
-                          <label class="filter-name">
-                            <input
+                          <input
+                              id="filter-input-pool"
                               class="filter-input"
                               type="checkbox"
                               name="pool"
                               checked
                             />
-                            <span class="filter-check-mark"></span>
-                            <span class="filter-check-background"></span>
-
-                            Бассейн</label
-                          >
+                          <label for="filter-input-pool">Бассейн</label>
                         </li>
                         <li class="filter-catalog-item">
-                          <label class="filter-name">
                             <input
                               class="filter-input"
                               type="checkbox"
                               name="parking"
+                              id="filter-input-parking"
                               checked
                             />
-                            <span class="filter-check-mark"></span>
-                            <span class="filter-check-background"></span>
-                            Парковка</label
+                            <label for="filter-input-parking">Парковка</label
                           >
                         </li>
                         <li class="filter-catalog-item">
-                          <label class="filter-name">
                             <input
-                              class="filter-input"
+                            class="filter-input"
+                              id="filter-input-wifi"
                               type="checkbox"
                               name="wifi"
                             />
-                            <span class="filter-check-mark"></span>
-                            <span class="filter-check-background"></span>
-                            Wi-Fi</label
-                          >
+                            <label for="filter-input-wifi">Wi-Fi</label>
                         </li>
                       </ul>
                     </fieldset>
@@ -132,47 +123,35 @@
                       <legend class="filter-catalog-title">Тип жилья</legend>
                       <ul class="filter-catalog-list">
                         <li class="filter-catalog-item">
-                          <label class="filter-name">
                             <input
-                              class="filter-input"
+                              class="filter-input-radio"
                               type="radio"
                               name="type-of-housing"
                               value="hotel"
                               checked
+                              id="filter-input-hotel"
                             />
-                            <span class="filter-radio-ellipce"></span>
-                            <span class="filter-radio-back"></span>
-
-                            Гостиница
-                          </label>
+                            <label for="filter-input-hotel">Гостиница</label>
                         </li>
                         <li class="filter-catalog-item">
-                          <label class="filter-name">
                             <input
-                              class="filter-input"
+                              class="filter-input-radio"
                               type="radio"
                               name="type-of-housing"
                               value="motel"
+                              id="filter-input-motel"
                             />
-                            <span class="filter-radio-ellipce"></span>
-                            <span class="filter-radio-back"></span>
-
-                            Мотель
-                          </label>
+                            <label for="filter-input-motel">Мотель</label>
                         </li>
                         <li class="filter-catalog-item">
-                          <label class="filter-name">
                             <input
-                              class="filter-input"
+                              class="filter-input-radio"
                               type="radio"
                               name="type-of-housing"
                               value="apartaments"
+                              id="filter-input-apartaments"
                             />
-                            <span class="filter-radio-ellipce"></span>
-                            <span class="filter-radio-back"></span>
-
-                            Апартаменты
-                          </label>
+                            <label for="filter-input-apartaments">Апартаменты</label>
                         </li>
                       </ul>
                     </fieldset>
@@ -184,14 +163,14 @@
                         <span class="filter-catalog-from">от</span>
                         <input
                           class="filter-catalog-input filter-catalog-input-right"
-                          type="number"
+                          type="text"
                           name="price-for"
                           value="0"
                           placeholder="от"
                         />
                         <input
                           class="filter-catalog-input filter-catalog-input-left"
-                          type="number"
+                          type="text"
                           name="price-for"
                           value="9000"
                           placeholder="до"
@@ -221,7 +200,7 @@
                       <input
                         class="filter-submit-button"
                         type="submit"
-                        value="Показать"
+                        value="Применить"
                       />
                       <input
                         class="filter-reset-button"
@@ -255,6 +234,7 @@
                   <input
                     id="sorting-view-button-1"
                     type="radio"
+                    name="sorting-view-button"
                     value="table"
                   />
                 </li>
@@ -265,8 +245,9 @@
                   ></label>
                   <input
                     id="sorting-view-button-2"
-                    type="button"
+                    type="radio"
                     value="slideshow"
+                    name="sorting-view-button"
                   />
                 </li>
                 <li class="sorting-view-button">
@@ -276,8 +257,9 @@
                   ></label>
                   <input
                     id="sorting-view-button-3"
-                    type="button"
+                    type="radio"
                     value="icon-list"
+                    name="sorting-view-button"
                   />
                 </li>
               </ul>
@@ -289,18 +271,16 @@
                   src="images/hotel-1.jpg"
                   width="300"
                   height="211"
-                  alt="Изображение карточки гостиницы"
+                  alt="Изображение карточки гостиницы."
                 />
                 <h3>Amara Resort & Spa</h3>
                 <div class="product-detal-inf">
                   <p class="product-type-housing">Гостиница</p>
                   <p class="product-price">От 4000 ₽</p>
                   <a class="product-details" href="#">Подробнее</a>
-                  <input
+                  <button
                     class="product-to-favorite"
-                    type="button"
-                    value="В избранное"
-                  />
+                    type="button">В избранное</button>
                   <div class="product-rating-result">
                     <span class="rating-star"></span>
                     <span class="rating-star"></span>
@@ -317,18 +297,17 @@
                   src="images/hotel-2.jpg"
                   width="300"
                   height="211"
-                  alt="Изображение карточки гостиницы"
+                  alt="Изображение карточки гостиницы."
                 />
                 <h3>Villas at Poco Diablo</h3>
                 <div class="product-detal-inf">
                   <p class="product-type-housing">Гостиница</p>
                   <p class="product-price">От 5000 ₽</p>
                   <a class="product-details" href="#">Подробнее</a>
-                  <input
+                  <button
                     class="product-to-favorite product-to-favorite-accept"
                     type="button"
-                    value="В избранном"
-                  />
+                  >В избранном</button>
                   <div class="product-rating-result">
                     <span class="rating-star"></span>
                     <span class="rating-star"></span>
@@ -344,18 +323,17 @@
                   src="images/hotel-3.jpg"
                   width="300"
                   height="211"
-                  alt="Изображение карточки гостиницы"
+                  alt="Изображение карточки гостиницы."
                 />
                 <h3>Desert Quail Inn</h3>
                 <div class="product-detal-inf">
                   <p class="product-type-housing">Гостиница</p>
                   <p class="product-price">От 2500 ₽</p>
                   <a class="product-details" href="#">Подробнее</a>
-                  <input
+                  <button
                     class="product-to-favorite"
                     type="button"
-                    value="В избранное"
-                  />
+                  >В избранное</button>
                   <div class="product-rating-result">
                     <span class="rating-star"></span>
                     <span class="rating-star"></span>
@@ -370,18 +348,17 @@
                   src="images/hotel-4.jpg"
                   width="300"
                   height="211"
-                  alt="Изображение карточки гостиницы"
+                  alt="Изображение карточки гостиницы."
                 />
                 <h3>GreenTree Inn</h3>
                 <div class="product-detal-inf">
                   <p class="product-type-housing">Гостиница</p>
                   <p class="product-price">От 1500 ₽</p>
                   <a class="product-details" href="#">Подробнее</a>
-                  <input
+                  <button
                     class="product-to-favorite"
                     type="button"
-                    value="В избранное"
-                  />
+                  >В избранное</button>
                   <div class="product-rating-result">
                     <span class="rating-star"></span>
                     <span class="rating-star"></span>
@@ -447,7 +424,7 @@
             />
             <input
               class="subscribe-input-button"
-              type="button"
+              type="submit"
               value="ПОДПИСАТЬСЯ"
             />
           </form>
