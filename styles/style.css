@@ -259,7 +259,7 @@ body {
   padding: 92px 85px;
   max-width: 230px;
 }
-.benefits-list li:nth-child(4) .description-icon{
+.benefit-item-addition-big .description-icon{
 margin-bottom: 26px;
 }
 .benefit-item-h {
